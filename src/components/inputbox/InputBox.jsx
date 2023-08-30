@@ -11,6 +11,7 @@ const InputBox = (props) => {
 
     const addTask = () => {
         parentGetTask(val);
+        setVal("");
     }
 
     return (
