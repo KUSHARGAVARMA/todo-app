@@ -10,7 +10,15 @@ const ListItems = (props) => {
       <ul>
         {
         tasks.map((task)=>{
-        return <li onClick={filterData} key={task.id} id = {task.id}> {task.taskName}</li>
+          if(task.taskCompletedAt==null)
+          {
+            return <li onClick={filterData} className={task.faded} key={task.id} id = {task.id}> {task.taskName} </li>
+
+          }
+          else{
+            return <li onClick={filterData} className={task.faded} key={task.id} id = {task.id}> {task.taskName} completed in {task.taskCompletedAt}</li>
+          }
+        
       })
         }
 

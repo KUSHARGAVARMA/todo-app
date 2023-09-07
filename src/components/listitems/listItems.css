@@ -1,1 +1,4 @@
 li { cursor: pointer; }
+.faded{
+    opacity: 0.2;
+}
