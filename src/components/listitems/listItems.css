@@ -1,4 +1,6 @@
 li { cursor: pointer; }
 .faded{
-    opacity: 0.2;
+    opacity: 0.6;
+    cursor: not-allowed; /* Change cursor to indicate it's disabled */
+    pointer-events: none; /* Disable pointer events (clicks, hover, etc.) */
 }
